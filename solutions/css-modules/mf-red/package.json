@@ -11,6 +11,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@types/node": "latest",
+    "esbuild-css-modules-plugin": "^2.7.1",
     "typescript": "latest",
     "reactstrap": "8.10.1",
     "tslib": "2.5.2",

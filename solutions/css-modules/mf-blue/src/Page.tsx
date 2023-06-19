@@ -1,8 +1,10 @@
 import * as React from 'react';
 
+import styles from "./style.modules.css";
+
 export default () => {
   return (
-    <>
+    <div className={styles.page}>
       <h2>Blue Title (should be blue)</h2>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat reiciendis illum qui nulla adipisci, laudantium
@@ -18,6 +20,6 @@ export default () => {
         eligendi fugit officia earum distinctio. Mollitia blanditiis iusto cum pariatur quaerat fuga qui molestias
         delectus?
       </p>
-    </>
+    </div>
   );
 };

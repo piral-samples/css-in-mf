@@ -1,4 +1,4 @@
-.tile-background {
+.tile {
   background: red;
   color: white;
   flex: 1;
@@ -7,11 +7,11 @@
   align-items: center;
 }
 
-h2 {
+.page h2 {
   color: red;
 }
 
-output {
+.output {
   border: 1px dashed red;
   padding: 1rem;
   font-weight: bold;

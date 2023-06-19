@@ -1,23 +1,29 @@
-import * as React from 'react';
-import { Link } from 'react-router-dom';
-import type { PiletApi } from 'sample-piral';
+import * as React from "react";
+import { Link } from "react-router-dom";
+import type { PiletApi } from "sample-piral";
+import { createWrapper } from "./utils";
 
 import "./style.css";
 
-const Page = React.lazy(() => import('./Page'));
+const Page = React.lazy(() => import("./Page"));
 
 export function setup(app: PiletApi) {
-  app.registerPage('/blue', Page);
+  const wrap = createWrapper("mf-blue");
 
-  app.registerMenu(() => <Link to="/blue">Blue Page</Link>);
+  app.registerPage("/blue", wrap(Page));
+
+  app.registerMenu(wrap(() => <Link to="/blue">Blue Page</Link>));
 
   app.registerTile(
-    () => <div className="tile-background">Hello from Blue!</div>,
+    wrap(() => <div className="tile-background">Hello from Blue!</div>),
     {
       initialColumns: 4,
       initialRows: 2,
     }
   );
 
-  app.registerExtension("blue-extension", () => <output>I'll be back (from blue)</output>);
+  app.registerExtension(
+    "blue-extension",
+    wrap(() => <output>I'll be back (from blue)</output>)
+  );
 }

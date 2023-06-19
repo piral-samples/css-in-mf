@@ -1,4 +1,4 @@
-.tile-background {
+.mf-blue-tile-background {
   background: blue;
   color: yellow;
   flex: 1;
@@ -7,11 +7,11 @@
   align-items: center;
 }
 
-h2 {
+h2.mf-blue {
   color: blue;
 }
 
-output {
+output.mf-blue {
   border: 1px dashed blue;
   background: #ccc;
   color: #555;

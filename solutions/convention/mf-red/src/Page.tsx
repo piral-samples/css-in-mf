@@ -3,7 +3,7 @@ import * as React from 'react';
 export default () => {
   return (
     <>
-      <h2>Red Title (should be colored likewise)</h2>
+      <h2 className="mf-red">Red Title (should be colored likewise)</h2>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat reiciendis illum qui nulla adipisci, laudantium
         vitae atque dicta blanditiis ab. Quae deleniti eum sapiente temporibus tenetur, maxime quibusdam iure nisi.

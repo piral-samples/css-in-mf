@@ -12,12 +12,12 @@ export function setup(app: PiletApi) {
   app.registerMenu(() => <Link to="/blue">Blue Page</Link>);
 
   app.registerTile(
-    () => <div className="tile-background">Hello from Blue!</div>,
+    () => <div className="mf-blue-tile-background">Hello from Blue!</div>,
     {
       initialColumns: 4,
       initialRows: 2,
     }
   );
 
-  app.registerExtension("blue-extension", () => <output>I'll be back (from blue)</output>);
+  app.registerExtension("blue-extension", () => <output className="mf-blue">I'll be back (from blue)</output>);
 }

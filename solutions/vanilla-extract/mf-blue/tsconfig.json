@@ -5,6 +5,8 @@
     "removeComments": false,
     "noLib": false,
     "emitDecoratorMetadata": true,
+    "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true,
     "experimentalDecorators": true,
     "target": "es6",
     "sourceMap": true,

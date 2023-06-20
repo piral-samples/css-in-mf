@@ -1,8 +1,9 @@
 import * as React from 'react';
+import { page } from "./Page.css.ts";
 
 export default () => {
   return (
-    <>
+    <div className={page}>
       <h2>Red Title (should be colored likewise)</h2>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat reiciendis illum qui nulla adipisci, laudantium
@@ -18,6 +19,6 @@ export default () => {
         delectus?
       </p>
       <piral-extension name="blue-extension"></piral-extension>
-    </>
+    </div>
   );
 };

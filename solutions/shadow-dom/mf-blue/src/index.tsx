@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import type { PiletApi } from "sample-piral";
 import { createWrapper } from "./utils";
 
-import "./style.css";
-
 const Page = React.lazy(() => import("./Page"));
 
 export function setup(app: PiletApi) {

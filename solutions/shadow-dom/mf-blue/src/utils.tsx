@@ -1,14 +1,9 @@
 import * as React from "react";
 import { createPortal } from "react-dom";
 
-const sheets: Array<Element> = [];
+import css from "./style.css";
 
 export function createWrapper(name: string) {
-  document.querySelectorAll(`link[data-origin=${name}]`).forEach((m) => {
-    m.remove();
-    sheets.push(m);
-  });
-
   customElements.define(
     name,
     class extends HTMLElement {
@@ -19,7 +14,8 @@ export function createWrapper(name: string) {
 
       connectedCallback() {
         this.style.display = "contents";
-        sheets.forEach((m) => this.shadowRoot.appendChild(m.cloneNode()));
+        const style = this.shadowRoot.appendChild(document.createElement('style'));
+        style.textContent = css;
       }
     }
   );

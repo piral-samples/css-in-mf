@@ -5,7 +5,9 @@
   "keywords": [
     "pilet"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@emotion/css": "^11.11.2"
+  },
   "devDependencies": {
     "sample-piral": "1.0.1",
     "@types/react": "^18.0.0",
@@ -19,7 +21,7 @@
     "react-router": "5.3.3",
     "react-router-dom": "5.3.3",
     "piral-cli": "1.0.0",
-    "piral-cli-esbuild": "latest"
+    "piral-cli-esbuild": "next"
   },
   "peerDependencies": {},
   "scripts": {

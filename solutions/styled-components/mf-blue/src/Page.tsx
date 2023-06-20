@@ -1,8 +1,15 @@
 import * as React from 'react';
+import styled from 'styled-components';
+
+const Page = styled.div`
+  h2 {
+    color: blue;
+  }
+`;
 
 export default () => {
   return (
-    <>
+    <Page>
       <h2>Blue Title (should be blue)</h2>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat reiciendis illum qui nulla adipisci, laudantium
@@ -18,6 +25,6 @@ export default () => {
         eligendi fugit officia earum distinctio. Mollitia blanditiis iusto cum pariatur quaerat fuga qui molestias
         delectus?
       </p>
-    </>
+    </Page>
   );
 };

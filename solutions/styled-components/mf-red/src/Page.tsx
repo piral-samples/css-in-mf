@@ -1,8 +1,15 @@
 import * as React from 'react';
+import styled from 'styled-components';
+
+const Page = styled.div`
+  h2 {
+    color: red;
+  }
+`;
 
 export default () => {
   return (
-    <>
+    <Page>
       <h2>Red Title (should be colored likewise)</h2>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat reiciendis illum qui nulla adipisci, laudantium
@@ -18,6 +25,6 @@ export default () => {
         delectus?
       </p>
       <piral-extension name="blue-extension"></piral-extension>
-    </>
+    </Page>
   );
 };

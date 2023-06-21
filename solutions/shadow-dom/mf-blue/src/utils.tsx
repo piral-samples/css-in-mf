@@ -4,8 +4,11 @@ import { createPortal } from "react-dom";
 import css from "./style.css";
 
 export function createWrapper(name: string) {
+  // We need a unique name to ensure that reloading works without hitting the "already registered"
+  const newName = `${name}-${Math.random().toString(26).substring(2)}`;
+
   customElements.define(
-    name,
+    newName,
     class extends HTMLElement {
       constructor() {
         super();
@@ -14,7 +17,9 @@ export function createWrapper(name: string) {
 
       connectedCallback() {
         this.style.display = "contents";
-        const style = this.shadowRoot.appendChild(document.createElement('style'));
+        const style = this.shadowRoot.appendChild(
+          document.createElement("style")
+        );
         style.textContent = css;
       }
     }
@@ -31,7 +36,7 @@ export function createWrapper(name: string) {
         );
       }, []);
 
-      return React.createElement(name, { ref: container }, portal);
+      return React.createElement(newName, { ref: container }, portal);
     };
   }
 

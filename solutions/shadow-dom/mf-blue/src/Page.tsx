@@ -3,6 +3,7 @@ import * as React from 'react';
 export default () => {
   return (
     <>
+      <style>{'p { font-style: italic; }'}</style>
       <h2>Blue Title (should be blue)</h2>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat reiciendis illum qui nulla adipisci, laudantium

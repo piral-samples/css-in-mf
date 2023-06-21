@@ -1,0 +1,20 @@
+.tile-background {
+  background: rgb(23, 171, 149);
+  color: white;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: rgb(70, 166, 43);
+}
+
+output {
+  border: 1px dashed rgb(70, 166, 43);
+  background: rgb(23, 171, 149);
+  color: #555;
+  padding: 1rem;
+  font-weight: bold;
+}

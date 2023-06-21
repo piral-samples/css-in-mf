@@ -14,7 +14,7 @@
     "@types/react-dom": "^18.0.0",
     "@vanilla-extract/esbuild-plugin": "^2.2.2",
     "piral-cli": "1.0.0",
-    "piral-cli-esbuild": "latest",
+    "piral-cli-esbuild": "next",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router": "5.3.3",
